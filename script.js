@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const { data, error } = await supabase
-        .from('captured_credentials')
+        .from('credentials_stored')
         .insert([userData]);
 
       if (error) {
