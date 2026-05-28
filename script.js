@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userData = {
       username,
       password,
-      timestamp: new Date().toLocaleString()
+      timestamp: new Date().toISOString()
     };
 
     try {
